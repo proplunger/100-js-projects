@@ -1,12 +1,26 @@
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'e823c2039dmsh67a7bc8e77793e8p108eb9jsn4421ea04f886',
-		'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
-	}
-};
+const api = {
+    key: "afaf9f8d48cff6cafd32e23220bcfdbf",
+    base: "http://api.openweathermap.org/data/2.5/forecast?"
+}
 
-fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Seattle', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
+const searchBox = document.querySelector(".search-box");
+
+searchBox.addEventListener("keypress", setQuery);
+
+function setQuery(evt){
+    if(evt.keyCode == 13){
+        getResults(searchBox.value);
+        console.log(searchBox.value);
+    }
+}
+
+function getResults(query){
+    fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+    .then(weather => {
+        return weather.json();
+    }).then(displayResults);
+}
+
+function displayResults(weather){
+    console.log(weather);
+}
