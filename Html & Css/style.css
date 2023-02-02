@@ -1,0 +1,111 @@
+.subscribe-btn {
+    background-color: rgb(200,0,0);
+    width: 105px;
+    height: 38px;
+    border-radius: 3px;
+    border-width: 0;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+.subscribe-btn:hover {
+    opacity: 0.7;
+}
+
+.join-btn {
+    width: 60px;
+    height: 38px;
+    border-radius: 3px;
+    margin-left: 8px;
+    border-width: 1px;
+    border-color: rgb(25, 104, 232);;
+    color: rgb(25, 104, 232);
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15;
+}
+
+.join-btn:hover {
+    color: white;
+    background-color: rgb(25, 104, 232);
+}
+
+.tweet-btn {
+    width: 75px;
+    height: 38px;
+    border-radius: 19px;
+    border-width: 0;
+    color: white;
+    background-color: rgb(53, 124, 237);
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: box-shadow 0.15s;
+}
+
+.tweet-btn:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.uber-btn {
+    background-color: rgb(30, 29, 29);
+    height: 38px;
+    color: white;
+    border-radius: 2px;
+    width: 120px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-width: 0;
+    cursor: pointer;
+}
+
+.uber-btn:hover{
+    background-color: rgb(58, 57, 57);
+}
+
+.cart {
+    border-width: 0;
+    background-color: rgb(244, 229, 22);
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.cart:hover{
+    background-color: rgb(205, 191, 7) ;
+}
+
+.buy-now {
+    border-width: 0;
+    background-color: rgb(242, 154, 2);
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.buy-now:hover{
+    opacity: 0.8;
+}
+
+h2{
+    color: rgb(4, 120, 4);
+}
+
+a{
+    font-size: 21px;
+}
+
+.amazon{
+    margin-left: 20px;
+    margin-top: 25px;
+}
