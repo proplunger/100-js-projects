@@ -1,0 +1,2 @@
+//methods
+// functions inside objects

@@ -88,3 +88,60 @@ console.log(students.every((student) => {
 console.log("Kr$na is in the Class", students.some((student) => student.Name === "Kr$na"));
 
 // fill method, splice method
+
+const myArray = new Array(10).fill(-1);
+console.log(myArray);
+
+const items = ["item1", "item2", "item3", "item4"];
+
+items.fill(-1,1,4);
+// fill(value, start(inclusive), end(exclusive))
+
+console.log(items);
+
+//splice, deletion and insertion in b/w an array
+const val = ["v1", "v2", "v3", "v4"];
+//splice(starting index, number of items to be deleted, item to be inserted)
+
+//delete
+val.splice(1, 1);
+console.log(val);
+
+//insert
+val.splice(2, 0, "insertedElement");
+console.log(val);
+
+// insertion and deletion
+val.splice(3, 1, "new1", "new2");
+console.log(val);
+
+
+// iterables
+// In which we can use for of loops
+// strings and arrays are iterables
+
+// array like objects
+// objects who have a index and length property
+// strings are array like objects
+
+
+// sets
+// No index based access and duplicate variables are not stored
+// order is not guarenteed
+// it is an iterable
+const s1 = new Set([9,10,11]);
+s1.add(1);
+s1.add(2);
+s1.add([3,4,5]);
+console.log(s1);
+console.log(s1.has(1));
+
+const IDs = [1,1,2,3,2,4,1,5,6];
+const uniqueId = new Set(IDs);
+console.log("hi",uniqueId);
+let ct = 0;
+for(let id of uniqueId){
+    ct++;
+}
+
+console.log(ct);
