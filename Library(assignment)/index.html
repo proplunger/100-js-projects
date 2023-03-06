@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Library App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Library App</h1>
+    </header>
+    <main>
+        <section id="search-section">
+            <h2>Search</h2>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Search by book title or author name">
+                <button type="submit">Search</button>
+                <button type="button" id="clear-search-button">Clear</button>
+            </form>
+            <div id="search-results"></div>
+            <div id="pagination-buttons">
+                <button type="button" id="previous-page-button" disabled>Previous</button>
+                <span id="page-number"></span>
+                <button type="button" id="next-page-button" disabled>Next</button>
+            </div>
+        </section>
+        <section id="popular-subjects-section">
+            <h2>Popular Subjects</h2>
+            <ul>
+                <li><a href="/subject/mystery">Mystery</a></li>
+                <li><a href="/subject/science-fiction">Science Fiction</a></li>
+                <li><a href="/subject/history">History</a></li>
+                <li><a href="/subject/romance">Romance</a></li>
+                <li><a href="/subject/self-help">Self Help</a></li>
+            </ul>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
