@@ -1,0 +1,4 @@
+.name, .age, .height, .weight{
+    display: block;
+    margin-bottom: 10px;
+}
