@@ -25,5 +25,26 @@ yt.setAttribute("href", "https://youtube.com");
 
 
 
+// js for vowel counter
+const text = document.querySelector(".text");
+const count = document.querySelector(".ct");
+const vowelCounter = () => {
+    let ct = 0;
+    const string = text.value;
+    for(let char of string){
+      let x = char.toLowerCase();
+      if(x === 'a' || x === 'e' || x === 'i' || x === 'o' || x === 'u'){
+        ct++;
+      }
+    }
+    console.log(ct);
+    count.innerText = ct;
+}
+
+const submit = document.querySelector(".submit");
+
+submit.addEventListener('click', vowelCounter);
+
+
 
 
