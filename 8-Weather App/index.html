@@ -5,28 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
- <div class="app-wrap">
-    <Header>
-        <Input type="text" autocomplete="off" class="search-box
-        " placeholder="Search for a City"></Input>
-    </Header>
-    <main>
-        <section class="location">
-            <div class="city">Haldwani, India</div>
-            <div class="date">Monday 23 January 2023</div>
-        </section>
-        <div class="current">
-            <div class="temp">
-                15 <span>&#8451</span>
-            </div>
-            <div class="weather">Sunny</div>
-            <div class="high-low"> 13 &#8451 / 16 &#8451</div>
+    <div class="card">
+        <div class="search">
+            <input type="text" class="search-bar">
+            <button class="search">Search</button>
         </div>
-    </main>
- </div>
- <script src="app.js"></script>
+        <div class="weather loading">
+            <h2 class="city">Weather in Nainital</h2>
+            <h1 class="temp">18 °C</h1>
+            <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon">
+            <div class="description">Cloudy</div>
+            <div class="humidity">Humidity: 60%</div>
+            <div class="wind">Wind Speed: 6 Km/h</div>
+        </div>
+    </div>
 </body>
 </html>
