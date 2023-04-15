@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<body>
+   <div style="display: grid; grid-template-columns: 100px 100px;">
+     <div style="background-color: lightblue;">div1</div>
+     <div style="background-color: lightpink;">div2 <p>some text</p></div>
+   </div>
+
+<div style="display: grid; grid-template-columns: 100px 100px 200px; margin-top: 10px;">
+    <div style="background-color: lightblue;">div1</div>
+    <div style="background-color: lightpink;">div2 <p>some text</p></div>
+    <div style="background-color: lightblue;">div3</div>
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; margin-top: 10px; row-gap: 10px; column-gap: 10px;">
+    <div style="background-color: lightblue; height: 200px;">div1</div>
+    <div style="background-color: lightpink;">div2</div>
+    <div style="background-color: lightblue;">div3</div>
+    <div style="background-color: lightpink; height: 200px;">div2</div>
+    <div style="background-color: lightblue;">div3</div>
+    <div style="background-color: lightpink;">div2</div>
+</div>
+</body>
+</html>
