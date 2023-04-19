@@ -1,0 +1,26 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "The Shawshank Redemption",
+      "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "year": 1994,
+      "image": "https://i.ytimg.com/vi/19THOH_dvxg/movieposter_en.jpg"
+    },
+    {
+      "id": 2,
+      "title": "The Godfather",
+      "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "year": 1972,
+      "image": "https://www.deccanherald.com/sites/dh/files/articleimages/2022/03/19/file7k6ctouvrywdnjv372i-1092645-1647659262.jpg"
+    },
+    {
+      "id": 3,
+      "title": "The Dark Knight",
+      "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "year": 2008,
+      "image": "https://i.ytimg.com/vi/B9wbHZM-L8g/movieposter_en.jpg"
+    }
+  ],
+  "favourites": []
+}

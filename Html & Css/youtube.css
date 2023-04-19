@@ -1,9 +1,9 @@
-.thumbnail{
-    width: 100%;
-    display: block;
+body{
+    margin: 0;
 }
 
-.search-bar{
+.thumbnail{
+    width: 100%;
     display: block;
 }
 
@@ -33,7 +33,6 @@
     grid-template-columns: 50px 1fr;
 }
 
-
 .profile-picture{
     width: 100%;
     border-radius: 50%;
@@ -47,6 +46,7 @@ p{
     font-family: Roboto, Arial;
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: 8px;
 }
 
 .video-grid{
@@ -56,3 +56,107 @@ p{
     row-gap: 40px;
 }
 
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    justify-content: space-between;
+}
+
+.left-section{
+    width: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.middle-section{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.right-section{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.hamburger-menu{
+   height: 25px;
+   margin-left: 24px;
+   margin-right: 24px;
+}
+
+.yt-logo{
+    height: 20px;
+}
+
+.search-bar{
+    flex: 1;
+    height: 37px;
+    padding-left: 12px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0;
+}
+
+.search{
+    width: 66px;
+    height: 40px;
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    margin-left: -1px;
+}
+
+.search::placeholder{
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.voice{
+    width: 40px;
+    height: 40px;
+    border-radius: 50% ;
+    margin-left: 10px;
+    border-width: 0;
+}
+
+.search-icon{
+    height: 25px;
+    margin-top: 4px;
+}
+
+.voice-icon{
+    height: 25px;
+    margin-top: 4px;
+    background-color: rgb(245, 245, 245);
+}
+
+.my-channel{
+    height: 32px;
+    border-radius: 50%;
+}
+
+.notifications{
+    height: 24px;
+}
+
+.upload {
+    height: 24px;
+}
+
+.apps {
+    height: 24px;
+}
